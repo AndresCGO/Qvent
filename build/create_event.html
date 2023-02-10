@@ -12,7 +12,13 @@
         <p class="font-medium text-4xl text-cream">Crear Evento</p>
     </header>
     <main>
-        
+        <form class="flex flex-col gap-2 justify-start">
+            <label for="event_name" class="text-cream font-medium text-2xl">Nombre</label>
+            <input type="text" name="event_name" id="event_name">
+            <label for="event_date" class="text-cream font-medium text-2xl">Fecha</label>
+            <input type="date" name="event_date" id="event_date">
+            <button class="bg-cream rounded-lg py-3 text-brown font-bold text-xl">Crear evento</button>
+        </form>
     </main>
     <footer class="flex justify-center">
         <img src="img/logo.png" alt="logo" class="object-scale-down h-12">
