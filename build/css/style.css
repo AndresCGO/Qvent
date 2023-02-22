@@ -597,6 +597,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-16 {
+  gap: 4.1rem;
+}
+
 .gap-12 {
   gap: 3rem;
 }
@@ -658,6 +662,11 @@ video {
 .bg-green-grass {
   --tw-bg-opacity: 1;
   background-color: rgb(95 141 78 / var(--tw-bg-opacity));
+}
+
+.bg-light-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
 }
 
 .object-scale-down {

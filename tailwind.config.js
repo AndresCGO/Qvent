@@ -8,6 +8,7 @@ module.exports = {
         'green-grass':'#5f8d4e',
         'brown':'#3c2a21',
         'green-pine':'#285430',
+        'light-gray': '#D9D9D9',
       }
     },
   },
