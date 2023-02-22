@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen flex flex-col p-5 bg-green-grass justify-between">
+    <div class="flex flex-col gap-12">
+        <p class="font-medium text-4xl text-cream">Nombre Evento</p>
+        <form class="flex flex-col gap-4 justify-start">
+            <div class="flex flex-col gap-4 justify-start bg-light-gray p-5 rounded-lg">
+                <div class="flex flex-row gap-4">
+                    <label for="event_name" class="text-brown font-medium text-2xl whitespace-nowrap">Boletas generadas</label>
+                    <input type="text" name="event_name" id="event_name" class="rounded p-2 w-12">
+                </div>
+                <div class="flex flex-row gap-16">
+                    <label for="event_name" class="text-brown font-medium text-2xl whitespace-nowrap">Boletas leídas</label>
+                    <input type="text" name="event_name" id="event_name" class="rounded p-2 w-12">
+                </div>
+            </div>
+            
+            <button class="bg-cream rounded-lg py-3 text-brown font-bold text-xl">Generar boletas</button>
+            <button class="bg-cream rounded-lg py-3 text-brown font-bold text-xl">Leer boletas</button>
+            <button class="bg-cream rounded-lg py-3 text-brown font-bold text-xl">Boletas generadas</button>
+        </form>
+    </div>
+    
+    <footer class="flex justify-center">
+        <a href="index.html"><img src="img/logo.png" alt="logo" class="object-scale-down h-12"></a>
+    </footer>
+    
+</body>
+</html>
