@@ -20,6 +20,7 @@
     "camelcase-css": "^2.0.1",
     "chokidar": "^3.5.3",
     "color-name": "^1.1.4",
+    "crypto-js": "^4.1.1",
     "cssesc": "^3.0.0",
     "defined": "^1.0.1",
     "detective": "^5.2.1",
