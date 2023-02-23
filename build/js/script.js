@@ -20,7 +20,7 @@ class Event{
 }
 
 create_event_btn.addEventListener('click',()=>{
-    console.log(localStorage.getItem('prueba'));
+    console.log(event_date.value);
 });
 
 
@@ -48,5 +48,8 @@ function getCounter()
 
 function createEvent(name,date)
 {
-
+    if(name!='' && date!='')
+    {
+        
+    }
 }
