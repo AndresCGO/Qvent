@@ -3,6 +3,7 @@ const event_name = document.getElementById('event_name');
 const event_date = document.getElementById('event_date');
 let counter;
 
+window.onload = Counter();
 
 class Event{
     id;
@@ -15,18 +16,20 @@ class Event{
         this.name = name;
         this.date = date;
         this.id = counter;
-        counter+=1;
+        counter = parseInt(counter) + 1;
+
+        
     }
 }
 
 create_event_btn.addEventListener('click',()=>{
-    console.log(event_date.value);
+    createEvent(event_name.value,event_date.value);
 });
 
 
 function Counter()
 {
-    if(getCounter()==null || checkStorage()==undefined)
+    if(getCounter()==null || getCounter()==undefined)
     {
         setCounter(0);
     }
@@ -50,6 +53,13 @@ function createEvent(name,date)
 {
     if(name!='' && date!='')
     {
-        
+        let event = new Event(name,date);
+        setEvent(event);
     }
+}
+
+
+function setEvent(Event)
+{
+    localStorage.setItem(`event${counter}`,JSON.stringify(Event));
 }
