@@ -5,6 +5,7 @@ let counter;
 
 window.onload = Counter();
 
+
 class Event{
     id;
     name;
@@ -15,15 +16,14 @@ class Event{
     {
         this.name = name;
         this.date = date;
-        this.id = counter;
+        this.id = parseInt(counter); 
         counter = parseInt(counter) + 1;
-
-        
     }
 }
 
 create_event_btn.addEventListener('click',()=>{
     createEvent(event_name.value,event_date.value);
+    setCounter(parseInt(counter));
 });
 
 
@@ -31,7 +31,7 @@ function Counter()
 {
     if(getCounter()==null || getCounter()==undefined)
     {
-        setCounter(0);
+        setCounter(1);
     }
     else
     {
@@ -55,6 +55,10 @@ function createEvent(name,date)
     {
         let event = new Event(name,date);
         setEvent(event);
+    }
+    else
+    {
+        alert('falta un dato perrahp');
     }
 }
 
