@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .card {
+        @apply flex flex-col gap-4 bg-light-gray p-4 rounded-lg relative;
+    }
+}
+
+
