@@ -513,6 +513,17 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
 .absolute {
   position: absolute;
 }
@@ -638,12 +649,12 @@ video {
   padding: 0.75rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-4 {
@@ -693,3 +704,5 @@ video {
   --tw-text-opacity: 1;
   color: rgb(229 217 182 / var(--tw-text-opacity));
 }
+
+
