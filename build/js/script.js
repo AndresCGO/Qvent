@@ -23,7 +23,7 @@ class Event{
 
 create_event_btn.addEventListener('click',()=>{
     createEvent(event_name.value,event_date.value);
-    setCounter(parseInt(counter));
+    setCounter(parseInt(counter));  
 });
 
 
