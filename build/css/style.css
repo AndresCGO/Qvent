@@ -528,24 +528,14 @@ video {
   position: absolute;
 }
 
-<<<<<<< HEAD
-=======
-.relative {
-  position: relative;
-}
-
->>>>>>> 50e34713077be7ce430e12e04abacc054a344875
 .left-5 {
   left: 1.25rem;
 }
 
-<<<<<<< HEAD
-=======
 .right-5 {
   right: 1.25rem;
 }
 
->>>>>>> 50e34713077be7ce430e12e04abacc054a344875
 .flex {
   display: flex;
 }
@@ -655,13 +645,6 @@ video {
   padding: 0.75rem;
 }
 
-<<<<<<< HEAD
-=======
-.p-4 {
-  padding: 1rem;
-}
-
->>>>>>> 50e34713077be7ce430e12e04abacc054a344875
 .p-5 {
   padding: 1.25rem;
 }
