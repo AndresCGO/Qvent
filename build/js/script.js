@@ -28,8 +28,6 @@ class Event{
 create_event_btn.addEventListener('click',()=>{
     createEvent(event_name.value,event_date.value);
     setCounter(parseInt(counter));  
-    create_event_PopUp.showModal(); 
-    error_PopUp.showModal();
 
 });
 
@@ -70,10 +68,12 @@ function createEvent(name,date)
     {
         let event = new Event(name,date);
         setEvent(event);
+        create_event_PopUp.showModal(); 
+    
     }
     else
     {
-        alert('falta un dato perrahp');
+        error_PopUp.showModal();
     }
 }
 
