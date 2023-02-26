@@ -31,6 +31,7 @@ function displayEvents(container,events)
         card.classList.add('card');
         const card_title = document.createElement('p');
         card_title.textContent = events[i].name;
+        card_title.setAttribute('style','font-weight:600');
         card.appendChild(card_title);
         container.appendChild(card);
     }
