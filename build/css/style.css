@@ -570,21 +570,6 @@ video {
   right: 1.25rem;
 }
 
-<<<<<<< HEAD
-=======
-.ml-auto {
-  margin-left: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-
-.block {
-  display: block;
-}
-
->>>>>>> PopUps
 .flex {
   display: flex;
 }
@@ -676,11 +661,6 @@ video {
   background-color: rgb(95 141 78 / var(--tw-bg-opacity));
 }
 
-.bg-light {
-  --tw-bg-opacity: 1;
-  background-color: rgb(199 199 199 / var(--tw-bg-opacity));
-}
-
 .bg-light-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(217 217 217 / var(--tw-bg-opacity));
@@ -758,16 +738,6 @@ video {
 .text-cream {
   --tw-text-opacity: 1;
   color: rgb(229 217 182 / var(--tw-text-opacity));
-}
-
-.backdrop-blur-sm {
-  --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
-.backdrop\:bg-black-80::backdrop {
-  background-color: #00000080;
 }
 
 

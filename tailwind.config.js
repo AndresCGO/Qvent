@@ -1,5 +1,3 @@
-const { lightgray } = require('color-name');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./build/*.html","./build/js/*.js",],
@@ -11,8 +9,6 @@ module.exports = {
         'brown':'#3c2a21',
         'green-pine':'#285430',
         'light-gray': '#D9D9D9',
-        'light': '#C7C7C7',
-        'black-80': '#00000080',
       }
     },
   },
