@@ -13,7 +13,7 @@ function getAllEvents()
         i = keys.length;
 
     while ( i-- ) {
-        if(keys[i]!='counter')
+        if(keys[i]!='counter' && keys[i]!='currentEvent')
         {
             values.push( JSON.parse(localStorage.getItem(keys[i]) ) );
         }
@@ -33,6 +33,15 @@ function displayEvents(container,events)
         card_title.textContent = events[i].name;
         card_title.setAttribute('style','font-weight:600');
         card.appendChild(card_title);
+        card.addEventListener('click',()=>{
+            window.location.href = "../build/event_information.html";
+            setCurrentEvent(events[i].id);
+        });
         container.appendChild(card);
     }
+}
+
+function setCurrentEvent(eventId)
+{
+    localStorage.setItem('currentEvent',JSON.stringify(eventId));
 }
