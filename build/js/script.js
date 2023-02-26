@@ -1,6 +1,10 @@
 const create_event_btn = document.getElementById('create_event_btn');
 const event_name = document.getElementById('event_name');
 const event_date = document.getElementById('event_date');
+const close_create_event_PopUp_btn = document.getElementById('close_create_event_PopUp_btn');
+const close_error_PopUp_btn = document.getElementById('close_error_PopUp_btn');
+const create_event_PopUp = document.getElementById('create_event_PopUp');
+const error_PopUp = document.getElementById('error_PopUp');
 let counter;
 
 window.onload = Counter();
@@ -24,6 +28,15 @@ class Event{
 create_event_btn.addEventListener('click',()=>{
     createEvent(event_name.value,event_date.value);
     setCounter(parseInt(counter));  
+
+});
+
+close_create_event_PopUp_btn.addEventListener('click',()=>{
+    create_event_PopUp.close();
+});
+
+close_error_PopUp_btn.addEventListener('click',()=>{
+    error_PopUp.close();
 });
 
 
@@ -55,10 +68,12 @@ function createEvent(name,date)
     {
         let event = new Event(name,date);
         setEvent(event);
+        create_event_PopUp.showModal(); 
+    
     }
     else
     {
-        alert('falta un dato perrahp');
+        error_PopUp.showModal();
     }
 }
 
