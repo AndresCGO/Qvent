@@ -1,6 +1,8 @@
 const create_event_btn = document.getElementById('create_event_btn');
 const event_name = document.getElementById('event_name');
 const event_date = document.getElementById('event_date');
+const close_create_event_PopUp_btn = document.getElementById('close_create_event_PopUp_btn')
+const create_event_PopUp = document.getElementById('create_event_PopUp')
 let counter;
 
 window.onload = Counter();
@@ -24,6 +26,12 @@ class Event{
 create_event_btn.addEventListener('click',()=>{
     createEvent(event_name.value,event_date.value);
     setCounter(parseInt(counter));  
+    create_event_PopUp.showModal();
+
+});
+
+close_create_event_PopUp_btn.addEventListener('click',()=>{
+    create_event_PopUp.close();
 });
 
 
