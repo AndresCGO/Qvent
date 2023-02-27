@@ -7,7 +7,9 @@ const create_event_PopUp = document.getElementById('create_event_PopUp');
 const error_PopUp = document.getElementById('error_PopUp');
 let counter;
 
-window.onload = Counter();
+window.onload = ()=>{
+    Counter()
+};
 
 
 class Event{
@@ -47,10 +49,11 @@ function Counter()
     if(getCounter()==null || getCounter()==undefined)
     {
         setCounter(1);
+        counter = getCounter();
     }
     else
     {
-        counter = getCounter()
+        counter = getCounter();
     }
 }
 
