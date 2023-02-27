@@ -1,5 +1,9 @@
 const ticket_number = document.getElementById('ticket_number');
 const generate_ticket = document.getElementById('generate_ticket');
+const generate_ticket_popUp = document.getElementById('generate_ticket_popUp');
+const accept_generate_ticket_PopUp_btn = document.getElementById('accept_generate_ticket_PopUp_btn');
+const cancel_generate_ticket_PopUp_btn = document.getElementById('cancel_generate_ticket_PopUp_btn');
+
 let current_event;
 
 
@@ -21,8 +25,18 @@ window.onload = ()=>
     current_event = getCurrentEvent();
 }
 
+
 generate_ticket.addEventListener('click',()=>{
     pushTickets(current_event,ticket_number.value);
+    generate_ticket_popUp.showModal(); 
+})
+
+accept_generate_ticket_PopUp_btn.addEventListener('click',()=>{
+    generate_ticket_popUp.close();
+})
+
+cancel_generate_ticket_PopUp_btn.addEventListener('click',()=>{
+    generate_ticket_popUp.close();
 })
 
 
