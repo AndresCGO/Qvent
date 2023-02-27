@@ -14,14 +14,6 @@ function getCurrentEvent()
     return JSON.parse(localStorage.getItem('currentEvent'));
 }
 
-function pushTickets(currentEvent,value)
-{
-    let event = getEvent(currentEvent);
-    let tickets = fillTickets(value);
-    event.tickets = tickets;
-    setEvent(currentEvent,event);
-}
-
 window.onload = ()=>
 {
     current_event = getCurrentEvent();
@@ -30,11 +22,11 @@ window.onload = ()=>
 
 generate_ticket.addEventListener('click',()=>{
     nberTickets.textContent = ticket_number.value;
-    pushTickets(current_event,ticket_number.value);
     generate_ticket_popUp.showModal(); 
 })
 
 accept_generate_ticket_PopUp_btn.addEventListener('click',()=>{
+    fillTickets(current_event,ticket_number.value);
     generate_ticket_popUp.close();
 })
 
@@ -48,16 +40,20 @@ function getEvent(currentEvent)
     return JSON.parse(localStorage.getItem(`event${currentEvent+1}`));
 }
 
-function fillTickets(value)
+function fillTickets(eventId,value)
 {   
-    let tickets = [];
+    let event = getEvent(eventId);
+    let tickets = event.tickets;
+    let length = parseInt(event.tickets.length) + parseInt(value);
 
-    for(let i=0;i<value;i++)
+    for(let i=event.tickets.length;i<length;i++)
     {
         tickets.push(i);
     }
     
-    return tickets;
+    event.tickets = tickets;
+    setEvent(eventId,event);
+
 }
 
 function setEvent(eventId,event)
