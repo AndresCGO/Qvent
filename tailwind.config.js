@@ -9,6 +9,7 @@ module.exports = {
         'brown':'#3c2a21',
         'green-pine':'#285430',
         'light-gray': '#D9D9D9',
+        'black-80': '#00000080',
       }
     },
   },
