@@ -25,10 +25,19 @@ window.onload = ()=>
     current_event = getCurrentEvent();
 }
 
+
 generate_ticket.addEventListener('click',()=>{
     pushTickets(current_event,ticket_number.value);
+    generate_ticket_popUp.showModal(); 
 })
 
+accept_generate_ticket_PopUp_btn.addEventListener('click',()=>{
+    generate_ticket_popUp.close();
+})
+
+cancel_generate_ticket_PopUp_btn.addEventListener('click',()=>{
+    generate_ticket_popUp.close();
+})
 
 
 function getEvent(currentEvent)
