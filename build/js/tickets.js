@@ -1,5 +1,9 @@
 const ticket_number = document.getElementById('ticket_number');
 const generate_ticket = document.getElementById('generate_ticket');
+const generate_ticket_popUp = document.getElementById('generate_ticket_popUp');
+const accept_generate_ticket_PopUp_btn = document.getElementById('accept_generate_ticket_PopUp_btn');
+const cancel_generate_ticket_PopUp_btn = document.getElementById('cancel_generate_ticket_PopUp_btn');
+
 let current_event;
 
 
@@ -24,6 +28,7 @@ window.onload = ()=>
 generate_ticket.addEventListener('click',()=>{
     pushTickets(current_event,ticket_number.value);
 })
+
 
 
 function getEvent(currentEvent)
