@@ -56,12 +56,12 @@ function Counter()
 
 function setCounter(value)
 {
-    localStorage.setItem('counter',value);
+    localStorage.setItem('counter',JSON.stringify(value));
 }
 
 function getCounter()
 {
-    return localStorage.getItem('counter');
+    return JSON.parse(localStorage.getItem('counter'));
 }
 
 function createEvent(name,date)
