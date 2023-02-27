@@ -22,6 +22,7 @@ class Event{
         this.date = date;
         this.id = parseInt(counter); 
         counter = parseInt(counter) + 1;
+        this.tickets = [];
     }
 }
 

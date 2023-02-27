@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generar Boleta</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/tickets.js" defer></script>
 </head>
 <body class="min-h-screen flex flex-col p-3 bg-green-grass justify-between">
     <div class="flex flex-col gap-12">
         <p class="font-medium text-4xl text-cream">Generar Boleta</p>
         <form class="flex flex-col gap-4 justify-start">
             <div class="flex flex-row gap-6">
-                <label for="event_name" class="text-cream font-medium text-2xl whitespace-nowrap">Nro de Boletas</label>
-                <input type="text" name="event_name" id="event_name" class="rounded p-2 w-12">
+                <label for="ticket_number" class="text-cream font-medium text-2xl whitespace-nowrap">Nro de Boletas</label>
+                <input type="number" name="ticket_number" id="ticket_number" class="rounded p-2 w-12">
             </div>
-            <button class="bg-cream rounded-lg py-3 text-brown font-bold text-xl">Generar</button>
+            <button type="button" class="bg-cream rounded-lg py-3 text-brown font-bold text-xl" id="generate_ticket">Generar</button>
         </form>
     </div>
     <footer class="flex justify-center">

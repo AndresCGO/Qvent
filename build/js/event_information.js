@@ -13,6 +13,7 @@ function getCurrentEventInf(currentEvent)
 {
     let info = JSON.parse(localStorage.getItem(`event${currentEvent+1}`))
     event_name.textContent = info.name;
+    gen_tickets_number.textContent = info.tickets.length;
 }
 
 window.onload = ()=>{
