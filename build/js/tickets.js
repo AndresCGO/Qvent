@@ -3,6 +3,8 @@ const generate_ticket = document.getElementById('generate_ticket');
 const generate_ticket_popUp = document.getElementById('generate_ticket_popUp');
 const accept_generate_ticket_PopUp_btn = document.getElementById('accept_generate_ticket_PopUp_btn');
 const cancel_generate_ticket_PopUp_btn = document.getElementById('cancel_generate_ticket_PopUp_btn');
+const nberTickets = document.getElementById('nberTickets');
+
 
 let current_event;
 
@@ -27,6 +29,7 @@ window.onload = ()=>
 
 
 generate_ticket.addEventListener('click',()=>{
+    nberTickets.textContent = ticket_number.value;
     pushTickets(current_event,ticket_number.value);
     generate_ticket_popUp.showModal(); 
 })
