@@ -4,5 +4,5 @@ document.addEventListener('DOMContentLoaded', ()=>
         ()=>
         {
             window.location.href = "../build/main.html";
-        },2000)
+        },1000)
 });
