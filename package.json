@@ -32,6 +32,7 @@
     "function-bind": "^1.1.1",
     "glob-parent": "^6.0.2",
     "has": "^1.0.3",
+    "html5-qrcode": "^2.3.7",
     "is-binary-path": "^2.1.0",
     "is-core-module": "^2.11.0",
     "is-extglob": "^2.1.1",
