@@ -709,6 +709,11 @@ video {
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
@@ -805,6 +810,16 @@ video {
 .text-cream {
   --tw-text-opacity: 1;
   color: rgb(229 217 182 / var(--tw-text-opacity));
+}
+
+.text-green-grass {
+  --tw-text-opacity: 1;
+  color: rgb(95 141 78 / var(--tw-text-opacity));
+}
+
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .backdrop-blur-sm {
