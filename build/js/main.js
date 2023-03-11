@@ -14,7 +14,7 @@ function getAllEvents()
         i = keys.length;
 
     while ( i-- ) {
-        if(keys[i]!='counter' && keys[i]!='currentEvent')
+        if(keys[i]!='counter' && keys[i]!='currentEvent' && keys[i]!='HTML5_QRCODE_DATA')
         {
             values.push( JSON.parse(localStorage.getItem(keys[i]) ) );
         }
