@@ -43,7 +43,7 @@ close_error_PopUp_btn.addEventListener('click',()=>{
     error_PopUp.close();
 });
 
-
+/* Initialize the counter or get the counter if it is already initialized */
 function Counter()
 {
     if(getCounter()==null || getCounter()==undefined)
@@ -57,16 +57,20 @@ function Counter()
     }
 }
 
+/* Set the counter in the localStorage */
 function setCounter(value)
 {
     localStorage.setItem('counter',JSON.stringify(value));
 }
 
+/* get the counter from the localStorage */
 function getCounter()
 {
     return JSON.parse(localStorage.getItem('counter'));
 }
 
+
+/* create a event with the event class constructor */
 function createEvent(name,date)
 {
     if(name!='' && date!='')
@@ -81,7 +85,7 @@ function createEvent(name,date)
     }
 }
 
-
+/* Set the event in the localStorage */
 function setEvent(Event)
 {
     localStorage.setItem(`event${counter}`,JSON.stringify(Event));
