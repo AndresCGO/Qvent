@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leer Boleta</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="./js/utilities/html5-qrcode.min.js"></script>
     <script src="./js/read_ticket.js" defer></script>
 </head>
@@ -13,5 +14,15 @@
         <div id="reader" class="min-h-screen w-fit"></div>
         <div id="result" class="w-full"></div>
     </main>
+
+    <dialog class="p-5 bg-light-gray rounded-lg border-2 font-bold text-brown text-xl backdrop-blur-sm backdrop:bg-black-80 " id="read_correctly_PopUp">
+        <p class="p-5 text-center">Boleta leída exitosamente</p>
+        <button type="button" class="rounded-lg p-2 block mr-auto ml-auto text-green-grass" id="close_read_correctly_PopUp_btn"> Cerrar </button>
+    </dialog>
+
+    <dialog class="p-5 bg-light-gray rounded-lg border-2 font-bold text-brown text-xl backdrop-blur-sm backdrop:bg-black-80 " id="failed_read_PopUp">
+        <p class="p-5 text-center ">Ha ocurrido un error</p>
+        <button type="button" class="rounded-lg p-2 block mr-auto ml-auto text-red-700 " id="close_error_PopUp_btn"> Cerrar </button>
+    </dialog>
 </body>
 </html>
