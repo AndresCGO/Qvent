@@ -1,6 +1,11 @@
 let currentEvent = getCurrentEvent();
 let eventInfo = getCurrentEventInfo(currentEvent);
 let eventTickets = eventInfo.tickets;
+const read_correctly_PopUp = document.getElementById('read_correctly_PopUp');
+const close_read_correctly_PopUp_btn = document.getElementById('close_read_correctly_PopUp_btn');
+const failed_read_PopUp = document.getElementById('failed_read_PopUp');
+const close_error_PopUp_btn = document.getElementById('close_error_PopUp_btn');
+
 
 console.log(eventTickets);
 
