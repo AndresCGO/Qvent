@@ -7,7 +7,17 @@ const failed_read_PopUp = document.getElementById('failed_read_PopUp');
 const close_error_PopUp_btn = document.getElementById('close_error_PopUp_btn');
 
 
-console.log(eventTickets);
+close_read_correctly_PopUp_btn.addEventListener('click',()=>
+{
+    read_correctly_PopUp.close();
+    window.parent.location = window.parent.location.href;
+});
+
+close_error_PopUp_btn.addEventListener('click',()=>
+{
+    failed_read_PopUp.close();
+    window.parent.location = window.parent.location.href;
+});
 
 
 const scanner = new Html5QrcodeScanner('reader', { 
@@ -30,13 +40,13 @@ function success(result) {
         eventInfo.tickets = eventTickets;
         updateEvent(eventInfo,currentEvent);
         scanner.clear();
+        read_correctly_PopUp.showModal();
         //document.getElementById('reader').remove();
     }
     else
     {
-        document.getElementById('result').innerHTML = '<h2> El QR ya fue leído o no existe </h2>'
-        document.getElementById('reader').remove();
         scanner.clear();
+        failed_read_PopUp.showModal();
     // Clears scanning instance
     }
 
