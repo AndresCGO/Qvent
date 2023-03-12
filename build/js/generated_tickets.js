@@ -1,6 +1,19 @@
 const main_container = document.getElementById('main_container');
+const share_btn = document.getElementById('share_btn');
+const prueba = document.getElementById('prueba');
 let current_event;
 let tickets;
+
+share_btn.addEventListener('click',()=>
+        {
+            if(navigator.share)
+            {
+                navigator.share(prueba).then(()=>
+                {
+                    console.log("Compartido");
+                }).catch(console.error);
+            }
+        });
 
 function getCurrentEvent()
 {
