@@ -43,6 +43,7 @@ function getQrCodes(tickets)
         card.appendChild(code)
         const share = document.createElement('img');
         share.src = 'img/compartir.png';
+        share.setAttribute('style', 'width: 2rem; height: auto; display: block; margin-right: auto; margin-left: auto;');
         share.classList.add('imgshare');
         card.appendChild(share)
         main_container.appendChild(card);

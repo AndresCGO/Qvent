@@ -15,9 +15,6 @@
         @apply text-brown font-bold text-1xl whitespace-nowrap object-scale-down;
     }
 
-    .imgshare {
-        @apply h-8 w-8 block mr-auto ml-auto;
-    }
 }
 
 
