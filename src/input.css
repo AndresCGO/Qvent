@@ -8,11 +8,11 @@
     }
 
     .date {
-        @apply text-brown font-bold text-1xl whitespace-nowrap;
+        @apply text-brown font-bold text-xl whitespace-nowrap;
     }
 
     .code {
-        @apply text-brown font-bold text-1xl whitespace-nowrap object-scale-down;
+        @apply text-brown font-bold text-xl whitespace-nowrap object-scale-down;
     }
 
 }
