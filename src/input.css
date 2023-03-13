@@ -6,6 +6,18 @@
     .card {
         @apply flex flex-col gap-4 bg-light-gray p-4 rounded-lg relative;
     }
+
+    .date {
+        @apply text-brown font-bold text-1xl whitespace-nowrap;
+    }
+
+    .code {
+        @apply text-brown font-bold text-1xl whitespace-nowrap object-scale-down;
+    }
+
+    .imgshare {
+        @apply h-8 w-8 block mr-auto ml-auto;
+    }
 }
 
 

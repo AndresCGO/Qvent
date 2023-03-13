@@ -9,15 +9,14 @@
     <script src="./js/generated_tickets.js" defer></script>
     </script>
 </head>
-<body class="min-h-screen flex flex-col p-5 bg-green-grass justify-between">
-    <div class="flex flex-col gap-12">
+<body class="min-h-screen flex flex-col bg-green-grass gap-4 justify-between ">
+    <header class="bg-green-grass sticky top-0 z-10 p-5 ">
         <p class="font-medium text-4xl text-cream">Boletas generadas</p>
+    </header>
+    <main class="grid grid-cols-2 gap-4 justify-start p-5 pb-5 gap-6 overflow-y-scroll absolute top-20 bottom-16" id="main_container">
+    </main>
 
-        <main class="grid grid-cols-2 gap-4 justify-start pb-5" id="main_container">
-        </main>
-    </div>
-
-    <footer class="flex justify-center">
+    <footer class="flex justify-center p-1 bg-green-grass sticky bottom-0 z-10">
         <a href="event_information.html"><img src="img/back.png" alt="back_image" class="object-scale-down h-12 absolute left-5"></a>
         <a href="./main.html"><img src="img/logo.png" alt="logo" class="object-scale-down h-12"></a>
     </footer>
