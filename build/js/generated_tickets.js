@@ -52,6 +52,15 @@ async function createQRCard(value,i)
     share.src = 'img/compartir.png';
     share.setAttribute('style', 'width: 2rem; height: auto; display: block; margin-right: auto; margin-left: auto;');
     share.classList.add('imgshare');
+    await shareQR(share,qr_image);
+    card.appendChild(share);
+    main_container.appendChild(card);
+}
+
+async function shareQR(share,img)
+{
+    const response = await fetch(img);
+    const blob = await response.blob();
     share.addEventListener('click',()=>
     {
         if(navigator.share)
@@ -60,8 +69,8 @@ async function createQRCard(value,i)
                 {
                     title: 'Boleta',
                     files: [
-                        new File([qr_image],'qr_image.png',{
-                            type: qr_image.type
+                        new File([blob],'qr.png',{
+                            type: blob.type
                         }),
                     ]
                 }
@@ -70,7 +79,5 @@ async function createQRCard(value,i)
                 alert('QR Compartido!');
             }).catch(console.error);
         }
-    });
-    card.appendChild(share);
-    main_container.appendChild(card);
+    })
 }
