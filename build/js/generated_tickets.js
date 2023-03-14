@@ -60,7 +60,7 @@ async function createQRCard(value,i)
                 {
                     title: 'Boleta',
                     files: [
-                        new File([qr_image],'qr_image',{
+                        new File([qr_image],'qr_image.png',{
                             type: qr_image.type
                         }),
                     ]
