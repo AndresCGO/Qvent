@@ -59,7 +59,11 @@ async function createQRCard(value,i)
             navigator.share(
                 {
                     title: 'Boleta',
-                    url: `${qr_image.src}`
+                    files: [
+                        new File([qr_image],'qr_image',{
+                            type: qr_image.type
+                        }),
+                    ]
                 }
             ).then(()=>
             {
