@@ -56,7 +56,12 @@ async function createQRCard(value,i)
     {
         if(navigator.share)
         {
-            navigator.share(qr_image).then(()=>
+            navigator.share(
+                {
+                    title: 'Boleta',
+                    url: `${qr_image.src}`
+                }
+            ).then(()=>
             {
                 alert('QR Compartido!');
             }).catch(console.error);
