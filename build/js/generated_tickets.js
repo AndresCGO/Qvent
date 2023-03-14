@@ -59,7 +59,7 @@ async function createQRCard(value,i)
 
 async function shareQR(share,img)
 {
-    const response = await fetch(img);
+    const response = await fetch(img.src);
     const blob = await response.blob();
     share.addEventListener('click',()=>
     {
