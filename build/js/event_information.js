@@ -22,13 +22,13 @@ window.onload = ()=>{
     current_event = getCurrentEvent();
     getCurrentEventInf(current_event);
     generate_tickets.addEventListener('click',()=>{
-        window.location.href = "../build/generate_ticket.html";
+        window.location.href = "./generate_ticket.html";
     });
     generated_tickets.addEventListener('click',()=>{
-        window.location.href = "../build/generated_tickets.html";
+        window.location.href = "./generated_tickets.html";
     });
     read_ticket.addEventListener('click',()=>{
-        window.location.href = "../build/read_ticket.html";
+        window.location.href = "./read_ticket.html";
     });
 }
 
