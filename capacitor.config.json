@@ -1,0 +1,6 @@
+{
+  "appId": "co.edu.upb.qvent",
+  "appName": "qvent",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}
