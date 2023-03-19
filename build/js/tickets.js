@@ -48,7 +48,7 @@ function fillTickets(eventId,value)
 
     for(let i=event.tickets.length;i<length;i++)
     {
-        tickets.push(crypto.randomUUID());
+        tickets.push(i);
     }
     
     event.tickets = tickets;
