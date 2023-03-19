@@ -10,8 +10,10 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "dependencies": {
+    "@capacitor/android": "^4.7.1",
     "@capacitor/cli": "^4.7.1",
     "@capacitor/core": "^4.7.1",
+    "@capacitor/ios": "^4.7.1",
     "acorn": "^7.4.1",
     "acorn-node": "^1.8.2",
     "acorn-walk": "^7.2.0",

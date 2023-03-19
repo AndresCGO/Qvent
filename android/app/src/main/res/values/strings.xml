@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">qvent</string>
+    <string name="title_activity_main">qvent</string>
+    <string name="package_name">co.edu.upb.qvent</string>
+    <string name="custom_url_scheme">co.edu.upb.qvent</string>
+</resources>
