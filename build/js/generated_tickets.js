@@ -41,7 +41,7 @@ async function createQRCard(value,i)
     options.setAttribute('style','-o-object-fit: scale-down; object-fit: scale-down; position: absolute; right: 1.25rem;');
     card.appendChild(options)
     const qr_image = document.createElement('img');
-    qr_image.src = "../img/qr.png";
+    qr_image.src = "./img/qr.png";
     qr_image.setAttribute('style', 'width: 10rem; height: auto; border-radius: 0.5rem;');
     card.appendChild(qr_image)
     const code = document.createElement('label');
