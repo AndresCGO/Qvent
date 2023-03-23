@@ -2,7 +2,7 @@ const gen_tickets_number = document.getElementById('gen_tickets_number');
 const read_tickets_number = document.getElementById('read_tickets_number');
 const event_name = document.getElementById('event_name');
 const generate_tickets = document.getElementById('generate_tickets');
-const generated_tickets = document.getElementById('generated_tickets');
+const available_tickets = document.getElementById('available_tickets');
 const read_ticket = document.getElementById('read_ticket');
 let current_event;
 
@@ -25,8 +25,8 @@ window.onload = ()=>{
     generate_tickets.addEventListener('click',()=>{
         window.location.href = "../build/generate_ticket.html";
     });
-    generated_tickets.addEventListener('click',()=>{
-        window.location.href = "../build/generated_tickets.html";
+    available_tickets.addEventListener('click',()=>{
+        window.location.href = "../build/available_tickets.html";
     });
     read_ticket.addEventListener('click',()=>{
         window.location.href = "../build/read_ticket.html";
