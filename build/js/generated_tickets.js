@@ -41,7 +41,7 @@ async function createQRCard(value,i)
     options.setAttribute('style','-o-object-fit: scale-down; object-fit: scale-down; position: absolute; right: 1.25rem;');
     card.appendChild(options)
     const qr_image = document.createElement('img');
-    qr_image.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + value;
+    qr_image.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + value + ".png";
     qr_image.setAttribute('style', 'width: 10rem; height: auto; border-radius: 0.5rem;');
     card.appendChild(qr_image)
     const code = document.createElement('label');
@@ -59,7 +59,7 @@ async function createQRCard(value,i)
 
 async function shareQR(share,img)
 {
-    const response = await fetch(`${img.src}.png`);
+    const response = await fetch(`${img.src}`);
     const blob = await response.blob();
     share.addEventListener('click',()=>
     {
