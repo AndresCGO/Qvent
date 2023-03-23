@@ -1,6 +1,7 @@
 let currentEvent = getCurrentEvent();
 let eventInfo = getCurrentEventInfo(currentEvent);
 let eventTickets = eventInfo.tickets;
+let readTickets = eventInfo.read_tickets;
 const read_correctly_PopUp = document.getElementById('read_correctly_PopUp');
 const close_read_correctly_PopUp_btn = document.getElementById('close_read_correctly_PopUp_btn');
 const failed_read_PopUp = document.getElementById('failed_read_PopUp');
@@ -38,6 +39,8 @@ function success(result) {
     if (index > -1) { // only splice array when item is found
         eventTickets.splice(index, 1); // 2nd parameter means remove one item only
         eventInfo.tickets = eventTickets;
+        readTickets +=1;
+        eventInfo.read_tickets = readTickets;
         updateEvent(eventInfo,currentEvent);
         scanner.clear();
         read_correctly_PopUp.showModal();

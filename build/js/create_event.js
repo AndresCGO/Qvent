@@ -17,6 +17,7 @@ class Event{
     name;
     date;
     tickets;
+    read_tickets;
 
     constructor(name,date)
     {
@@ -25,6 +26,7 @@ class Event{
         this.id = parseInt(counter); 
         counter = parseInt(counter) + 1;
         this.tickets = [];
+        this.read_tickets = 0;
     }
 }
 
