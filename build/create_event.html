@@ -26,14 +26,19 @@
         </form>
     </div>
 
-    <dialog class="p-5 bg-light-gray rounded-lg border-2 font-bold text-brown text-xl backdrop-blur-sm backdrop:bg-black-80 " id="create_event_PopUp">
-        <p class="p-5 text-center">Evento generado exitosamente</p>
-        <button type="button" class="rounded-lg p-2 block mr-auto ml-auto text-green-grass" id="close_create_event_PopUp_btn"> Cerrar </button>
+    <dialog class="px-0 pb-0 bg-light-gray/[.85] rounded-lg font-bold text-brown text-lg backdrop-blur-sm backdrop:bg-black-80-[.5] " id="create_event_PopUp">
+        <p class="p-8 text-center">Evento generado exitosamente</p>
+        <div class="mr-auto ml-auto flex flex-col ">
+            <button type="button" class="py-2 bg-light border-solid border-stone-400 border-t text-lg font-semibold text-red-700 bg-light-gray/[.05]" id="close_create_event_PopUp_btn"> Cerrar </button>
+        </div>
     </dialog>
 
-    <dialog class="p-5 bg-light-gray rounded-lg border-2 font-bold text-brown text-xl backdrop-blur-sm backdrop:bg-black-80 " id="error_PopUp">
-        <p class="p-5 text-center ">Ha ocurrido un error</p>
-        <button type="button" class="rounded-lg p-2 block mr-auto ml-auto text-green-grass" id="close_error_PopUp_btn"> Cerrar </button>
+    <dialog class="px-0 pb-0 bg-light-gray/[.85] rounded-lg font-bold text-brown text-lg backdrop-blur-sm backdrop:bg-black-80-[.5] " id="error_PopUp">
+        <p class="p-8 px-16 text-center ">Ha ocurrido un error</p>
+        <div class="mr-auto ml-auto flex flex-col ">
+            <button type="button" class="py-2 bg-light border-solid border-stone-400 border-t text-lg font-semibold text-red-700 bg-light-gray/[.05]" id="close_error_PopUp_btn"> Cerrar </button>
+        </div>
+        
     </dialog>
 
     <!-- <dialog  class="p-5 bg-light-gray rounded-lg border-2 font-bold text-brown text-xl backdrop-blur-sm backdrop:bg-black-80 " id="error_PopUp">
