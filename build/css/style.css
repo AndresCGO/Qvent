@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -590,6 +590,18 @@ video {
   position: sticky;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -598,28 +610,16 @@ video {
   top: 5rem;
 }
 
-.bottom-16 {
-  bottom: 4rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.left-5 {
-  left: 1.25rem;
-}
-
 .z-10 {
   z-index: 10;
 }
 
-.mr-auto {
-  margin-right: auto;
-}
-
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .block {
@@ -650,12 +650,12 @@ video {
   width: 3rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-80 {
   width: 20rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .min-w-full {
@@ -694,24 +694,20 @@ video {
   justify-content: space-between;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
 .gap-12 {
   gap: 3rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-16 {
+  gap: 4rem;
 }
 
 .gap-2 {
   gap: 0.5rem;
 }
 
-.gap-16 {
-  gap: 4rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-6 {
@@ -734,8 +730,26 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-b-lg {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
 .border-2 {
   border-width: 2px;
+}
+
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
 }
 
 .border-cream {
@@ -743,9 +757,9 @@ video {
   border-color: rgb(229 217 182 / var(--tw-border-opacity));
 }
 
-.bg-green-grass {
-  --tw-bg-opacity: 1;
-  background-color: rgb(95 141 78 / var(--tw-bg-opacity));
+.border-stone-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(168 162 158 / var(--tw-border-opacity));
 }
 
 .bg-cream {
@@ -753,14 +767,9 @@ video {
   background-color: rgb(229 217 182 / var(--tw-bg-opacity));
 }
 
-.bg-light-gray {
+.bg-green-grass {
   --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(95 141 78 / var(--tw-bg-opacity));
 }
 
 .bg-green-pine {
@@ -768,30 +777,57 @@ video {
   background-color: rgb(40 84 48 / var(--tw-bg-opacity));
 }
 
+.bg-light-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
+}
+
+.bg-light-gray\/\[\.05\] {
+  background-color: rgb(217 217 217 / .05);
+}
+
+.bg-light-gray\/\[\.85\] {
+  background-color: rgb(217 217 217 / .85);
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .p-1 {
   padding: 0.25rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-4 {
@@ -804,6 +840,20 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -812,14 +862,19 @@ video {
   text-align: center;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl {
@@ -827,22 +882,26 @@ video {
   line-height: 1.75rem;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-bold {
   font-weight: 700;
 }
 
-.text-cream {
-  --tw-text-opacity: 1;
-  color: rgb(229 217 182 / var(--tw-text-opacity));
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-brown {
   --tw-text-opacity: 1;
   color: rgb(60 42 33 / var(--tw-text-opacity));
+}
+
+.text-cream {
+  --tw-text-opacity: 1;
+  color: rgb(229 217 182 / var(--tw-text-opacity));
 }
 
 .text-green-grass {
