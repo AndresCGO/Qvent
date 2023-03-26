@@ -26,9 +26,25 @@
             <button type="button" class="bg-cream rounded-lg py-3 text-brown font-bold text-xl" id="generate_tickets">Generar boletas</button>
             <button type="button" class="bg-cream rounded-lg py-3 text-brown font-bold text-xl" id="read_ticket">Leer boletas</button>
             <button type="button" class="bg-cream rounded-lg py-3 text-brown font-bold text-xl" id="available_tickets">Boletas disponibles</button>
+            <button type="button" class="bg-cream rounded-lg py-3 text-brown font-bold text-xl" id="delete_event">Eliminar Evento</button>
         </form>
     </div>
-    
+
+    <dialog class="max-w-xs px-0 pb-0 bg-light-gray/[.85] rounded-lg font-bold text-brown text-lg  backdrop-blur-sm backdrop:bg-black-80-[.5]  " id="delete_event_PopUp">
+        <p class="p-8 text-center "> ¿Estas seguro que quieres <span class="whitespace-nowrap"> eliminar el evento?</span></p>
+        <div class="mr-auto ml-auto flex flex-col ">
+            <button type="button" class="p-1 bg-light border-solid border-stone-400 border-y text-lg font-semibold text-green-grass bg-light-gray/[.05]" id="delete_event_PopUp_btn"> Eliminar evento </button>
+            <button type="button" class="p-1 rounded-b-lg bg-light text-lg font-semibold text-red-700 bg-light-gray/[.05]" id="cancel_delete_event_PopUp_btn"> Cancelar</button>
+        </div>
+    </dialog>
+
+    <dialog class="max-w-xs px-0 pb-0 bg-light-gray/[.85] rounded-lg font-bold text-brown text-lg backdrop-blur-sm backdrop:bg-black-80-[.5] " id="successfully_deleted_event_PopUp">
+        <p class="p-8 text-center">Evento eliminado exitosamente</p>
+        <div class="mr-auto ml-auto flex flex-col ">
+            <button type="button" class="py-2 bg-light border-solid border-stone-400 border-t text-lg font-semibold text-red-700 bg-light-gray/[.05]" id="close_successfully_deleted_event_PopUp_btn"> Cerrar </button>
+        </div>
+    </dialog>
+
     <footer class="flex justify-center">
         <a href="./main.html"><img src="img/logo.png" alt="logo" class="object-scale-down h-12"></a>
     </footer>
